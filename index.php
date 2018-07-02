@@ -54,8 +54,9 @@
 				$file_name= $data['file_name'];
 				$path= "doc/". $file_name; 
 				$size= filesize($path)/1024;
+				$size1= round($size, 3);
 				echo"<tr class='row'>"; 
-			echo '<td>'.$data['id'].'</td><td>'.$data['file_name'].'</td><td>'.$size.'</td><td>'.$data['count'].'</td><td>'."<a href='download.php?down=$id'>download</a>".'</td>'; 
+			echo '<td>'.$data['id'].'</td><td>'.$data['file_name'].'</td><td>'.$size1.'</td><td>'.$data['count'].'</td><td>'."<a href='download.php?down=$id'>download</a>".'</td>'; 
 			echo'</tr>'; 
 			
 				}
